@@ -1,0 +1,123 @@
+Gender,Age,Employment,Income,VisitFrequency,EnjoyMethod,VisitDuration,NearestOutlet,Membership,PurchaseType,SpendPerVisit,Rating_Quality,Rating_Price,Rating_Promotions,Rating_Ambiance,Rating_WiFi,Rating_Service,Rating_LikelyReturn,Continue,Avg_Satisfaction
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,within 1km,Yes,Coffee,Less than RM20,4,3,5,5,4,4,3,Yes,4.0
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,1km - 3km,Yes,Cold drinks;Pastries,Less than RM20,4,3,4,4,4,5,2,Yes,3.7142857142857144
+Male,From 20 to 29,Employed,"Less than RM25,000",Monthly,Dine in,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee,Less than RM20,4,3,4,4,4,4,3,Yes,3.7142857142857144
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Coffee,Less than RM20,2,1,4,3,3,3,3,No,2.7142857142857144
+Male,From 20 to 29,Student,"Less than RM25,000",Monthly,Take away,Between 30 minutes to 1 hour,1km - 3km,No,Coffee;Sandwiches,Around RM20 - RM40,3,3,4,2,2,3,3,Yes,2.857142857142857
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,more than 3km,No,Cold drinks,Less than RM20,4,3,5,5,4,5,4,Yes,4.285714285714286
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,within 1km,Yes,Coffee,Around RM20 - RM40,5,5,5,5,3,5,5,Yes,4.714285714285714
+Male,From 20 to 29,Employed,"RM50,000 - RM100,000",Rarely,Dine in,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee;Cold drinks,Less than RM20,4,2,3,3,3,3,3,Yes,3.0
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Drive-thru,Below 30 minutes,more than 3km,Yes,Cold drinks,More than RM40,5,4,4,4,4,4,4,Yes,4.142857142857143
+Male,From 20 to 29,Employed,"Less than RM25,000",Monthly,Take away,Below 30 minutes,more than 3km,No,Coffee,Around RM20 - RM40,4,3,3,4,3,3,4,Yes,3.4285714285714284
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,4,1,4,5,3,3,4,Yes,3.4285714285714284
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,more than 3km,No,Coffee,Less than RM20,3,2,4,4,3,4,4,No,3.4285714285714284
+Female,From 20 to 29,Student,"Less than RM25,000",Weekly,Take away,Below 30 minutes,1km - 3km,Yes,Coffee;Sandwiches,Around RM20 - RM40,4,3,2,4,4,3,4,Yes,3.4285714285714284
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,1km - 3km,Yes,Coffee,Less than RM20,4,3,4,4,4,4,3,Yes,3.7142857142857144
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,within 1km,Yes,Coffee,Less than RM20,5,2,5,5,5,5,2,No,4.142857142857143
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee,Less than RM20,4,1,5,4,3,4,4,No,3.5714285714285716
+Male,From 30 to 39,Employed,"RM50,000 - RM100,000",Monthly,Drive-thru,Below 30 minutes,within 1km,Yes,Coffee,Around RM20 - RM40,4,3,3,4,3,3,3,Yes,3.2857142857142856
+Male,From 20 to 29,Employed,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,within 1km,Yes,Coffee,Less than RM20,4,4,4,4,4,4,4,Yes,4.0
+Male,From 20 to 29,Employed,"RM25,000 - RM50,000",Weekly,Take away,Below 30 minutes,1km - 3km,Yes,Coffee,Around RM20 - RM40,4,3,4,5,5,5,5,Yes,4.428571428571429
+Female,From 20 to 29,Self-employed,"RM50,000 - RM100,000",Rarely,Take away,Below 30 minutes,1km - 3km,Yes,Cold drinks,Less than RM20,3,4,3,4,3,4,2,Yes,3.2857142857142856
+Male,From 30 to 39,Employed,"RM100,000 - RM150,000",Rarely,Take away,Below 30 minutes,within 1km,Yes,Coffee,Around RM20 - RM40,2,2,5,3,3,4,3,No,3.142857142857143
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,within 1km,No,Coffee,Around RM20 - RM40,5,3,4,3,3,4,5,Yes,3.857142857142857
+Male,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Dine in,More than 3 hours,within 1km,No,Coffee,Less than RM20,5,2,5,5,2,4,3,No,3.7142857142857144
+Female,From 20 to 29,Student,"Less than RM25,000",Monthly,Drive-thru,Between 1 hour to 2 hours,1km - 3km,Yes,Cold drinks;Pastries;Sandwiches,Less than RM20,5,4,4,5,4,4,3,Yes,4.142857142857143
+Male,40 and above,Self-employed,"RM100,000 - RM150,000",Rarely,Dine in,Between 1 hour to 2 hours,more than 3km,No,Coffee;Juices;Pastries;Sandwiches,Around RM20 - RM40,4,3,4,4,3,3,5,Yes,3.7142857142857144
+Male,From 30 to 39,Employed,"More than RM150,000",Monthly,Dine in,Between 30 minutes to 1 hour,1km - 3km,Yes,Coffee;Cold drinks,Around RM20 - RM40,4,3,1,4,4,5,4,Yes,3.5714285714285716
+Male,From 30 to 39,Employed,"More than RM150,000",Rarely,Drive-thru,Below 30 minutes,1km - 3km,No,Coffee,Less than RM20,4,2,4,4,4,4,2,No,3.4285714285714284
+Male,From 20 to 29,Self-employed,"Less than RM25,000",Monthly,Take away,Below 30 minutes,more than 3km,No,Coffee,Around RM20 - RM40,5,3,4,4,3,4,3,Yes,3.7142857142857144
+Male,40 and above,Self-employed,"More than RM150,000",Weekly,Drive-thru,Below 30 minutes,1km - 3km,Yes,Coffee,More than RM40,4,5,3,3,3,4,5,Yes,3.857142857142857
+Female,From 20 to 29,Employed,"RM50,000 - RM100,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,Yes,Coffee,Less than RM20,5,5,5,5,3,5,5,Yes,4.714285714285714
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Monthly,Take away,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee;Pastries;Sandwiches,Around RM20 - RM40,3,1,4,4,3,4,4,Yes,3.2857142857142856
+Female,From 20 to 29,Employed,"RM50,000 - RM100,000",Weekly,Drive-thru,Below 30 minutes,within 1km,Yes,Coffee;Pastries,Around RM20 - RM40,4,3,3,3,2,3,4,Yes,3.142857142857143
+Female,From 30 to 39,Employed,"RM25,000 - RM50,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Coffee,Around RM20 - RM40,2,3,5,5,3,5,5,Yes,4.0
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,Yes,Coffee,Less than RM20,3,2,3,3,3,4,3,No,3.0
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Take away,Below 30 minutes,within 1km,No,Coffee,Less than RM20,3,4,4,3,4,4,3,Yes,3.5714285714285716
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Coffee,Less than RM20,4,2,4,4,3,4,1,No,3.142857142857143
+Female,From 20 to 29,Self-employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,within 1km,No,Cold drinks,Less than RM20,3,3,4,4,5,5,2,Yes,3.7142857142857144
+Male,Below 20,Student,"Less than RM25,000",Rarely,Dine in,Between 1 hour to 2 hours,more than 3km,No,Coffee,Less than RM20,5,2,3,4,4,3,5,Yes,3.7142857142857144
+Male,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,Yes,Cold drinks;Juices;Pastries,Around RM20 - RM40,4,4,4,4,4,4,4,Yes,4.0
+Male,From 30 to 39,Employed,"RM50,000 - RM100,000",Rarely,Take away,Below 30 minutes,within 1km,Yes,Coffee,Less than RM20,3,2,5,3,3,5,3,Yes,3.4285714285714284
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Never,Take away,Below 30 minutes,1km - 3km,No,Coffee,Less than RM20,4,4,4,4,4,4,4,Yes,4.0
+Male,From 20 to 29,Employed,"Less than RM25,000",Monthly,Dine in,Between 30 minutes to 1 hour,within 1km,Yes,Coffee,Around RM20 - RM40,5,4,5,5,3,5,5,Yes,4.571428571428571
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Weekly,Dine in,Between 30 minutes to 1 hour,within 1km,Yes,Coffee,Around RM20 - RM40,5,4,5,5,1,4,4,Yes,4.0
+Female,From 20 to 29,Employed,"Less than RM25,000",Monthly,Take away,Below 30 minutes,more than 3km,No,Coffee;Pastries,Around RM20 - RM40,4,4,5,4,4,5,5,Yes,4.428571428571429
+Female,Below 20,Student,"Less than RM25,000",Never,Never,Below 30 minutes,1km - 3km,No,Coffee,Zero,3,3,3,3,3,3,3,Yes,3.0
+Female,From 30 to 39,Student,"RM50,000 - RM100,000",Rarely,Take away,Below 30 minutes,1km - 3km,Yes,Coffee;Pastries,Around RM20 - RM40,5,3,4,3,4,4,4,Yes,3.857142857142857
+Female,Below 20,Student,"Less than RM25,000",Never,Dine in,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,3,2,5,4,3,3,5,Yes,3.5714285714285716
+Female,From 20 to 29,Self-employed,"Less than RM25,000",Rarely,Take away,Between 30 minutes to 1 hour,more than 3km,No,Coffee,Zero,3,1,5,4,3,3,2,Yes,3.0
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Take away,Below 30 minutes,within 1km,No,Cold drinks,Less than RM20,3,4,5,4,3,4,2,Yes,3.5714285714285716
+Male,Below 20,Student,"Less than RM25,000",Rarely,Drive-thru,Below 30 minutes,within 1km,Yes,Cold drinks,Less than RM20,3,3,3,3,3,3,3,Yes,3.0
+Male,40 and above,Employed,"RM100,000 - RM150,000",Rarely,Dine in,Below 30 minutes,more than 3km,Yes,Coffee,Around RM20 - RM40,4,4,4,4,2,3,4,Yes,3.5714285714285716
+Female,Below 20,Student,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,3,3,2,2,2,4,3,No,2.7142857142857144
+Female,40 and above,Housewife,"Less than RM25,000",Monthly,Take away,Below 30 minutes,more than 3km,Yes,Cold drinks;Juices;Pastries,More than RM40,5,4,3,5,3,5,5,Yes,4.285714285714286
+Female,Below 20,Student,"Less than RM25,000",Rarely,Drive-thru,Below 30 minutes,more than 3km,No,Coffee,Around RM20 - RM40,3,3,2,3,3,3,3,Yes,2.857142857142857
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Take away,Between 30 minutes to 1 hour,within 1km,Yes,Coffee,Around RM20 - RM40,4,3,5,4,4,5,5,Yes,4.285714285714286
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Monthly,Take away,Between 30 minutes to 1 hour,1km - 3km,Yes,Coffee,Less than RM20,4,3,4,3,2,3,4,Yes,3.2857142857142856
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Drive-thru,Below 30 minutes,1km - 3km,No,Coffee;Cold drinks,Around RM20 - RM40,5,4,3,4,3,3,3,Yes,3.5714285714285716
+Male,Below 20,Student,"Less than RM25,000",Monthly,Dine in,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee,Less than RM20,5,5,5,5,5,5,5,Yes,5.0
+Male,Below 20,Student,"Less than RM25,000",Monthly,Dine in,Below 30 minutes,1km - 3km,No,Coffee,Less than RM20,3,3,3,3,4,3,3,Yes,3.142857142857143
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Drive-thru,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,4,3,4,4,3,4,3,Yes,3.5714285714285716
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 1 hour to 2 hours,1km - 3km,Yes,Coffee,More than RM40,2,1,5,1,4,3,3,Yes,2.7142857142857144
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Drive-thru,Below 30 minutes,1km - 3km,No,Coffee;Cold drinks,Around RM20 - RM40,5,4,3,4,3,3,3,Yes,3.5714285714285716
+Male,From 30 to 39,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,more than 3km,No,Coffee,Around RM20 - RM40,3,3,4,3,3,3,3,Yes,3.142857142857143
+Male,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Between 30 minutes to 1 hour,within 1km,Yes,Coffee,Less than RM20,4,2,3,5,4,4,5,Yes,3.857142857142857
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Coffee,Zero,3,1,5,3,4,4,5,No,3.5714285714285716
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,No,Coffee,Less than RM20,4,3,2,4,3,4,4,No,3.4285714285714284
+Female,From 20 to 29,Self-employed,"RM25,000 - RM50,000",Monthly,Dine in,Below 30 minutes,within 1km,Yes,Coffee;Cold drinks;Pastries;Sandwiches,Around RM20 - RM40,4,3,4,5,4,4,4,Yes,4.0
+Female,From 20 to 29,Self-employed,"Less than RM25,000",Never,Never,Below 30 minutes,more than 3km,No,Other/None,Zero,3,3,3,3,3,3,3,No,3.0
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,more than 3km,No,Coffee,Zero,2,1,5,4,4,4,1,No,3.0
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,Yes,Cold drinks,Less than RM20,3,3,5,4,3,3,4,Yes,3.5714285714285716
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,within 1km,No,Coffee,Less than RM20,4,3,4,5,5,5,3,Yes,4.142857142857143
+Male,From 20 to 29,Employed,"RM25,000 - RM50,000",Weekly,Take away,Between 1 hour to 2 hours,within 1km,Yes,Coffee;Sandwiches,Around RM20 - RM40,5,1,3,3,2,3,3,Yes,2.857142857142857
+Female,From 20 to 29,Employed,"Less than RM25,000",Monthly,Take away,Below 30 minutes,more than 3km,Yes,Coffee,Less than RM20,4,2,4,4,3,4,3,Yes,3.4285714285714284
+Male,From 30 to 39,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,1km - 3km,Yes,Cold drinks,Less than RM20,3,2,4,4,4,5,4,Yes,3.7142857142857144
+Female,From 20 to 29,Housewife,"RM50,000 - RM100,000",Rarely,Drive-thru,Below 30 minutes,more than 3km,No,Coffee;Cold drinks,Around RM20 - RM40,3,2,3,3,3,5,4,Yes,3.2857142857142856
+Male,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Take away,Below 30 minutes,more than 3km,Yes,Coffee,Less than RM20,3,3,4,5,4,4,4,Yes,3.857142857142857
+Male,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,1km - 3km,No,Coffee,Less than RM20,4,2,5,3,2,4,4,Yes,3.4285714285714284
+Male,From 20 to 29,Employed,"RM50,000 - RM100,000",Monthly,Dine in,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee,Around RM20 - RM40,4,2,1,4,1,4,4,Yes,2.857142857142857
+Female,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Coffee,Less than RM20,2,1,5,2,2,2,2,No,2.2857142857142856
+Female,Below 20,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,2,2,3,2,2,2,2,No,2.142857142857143
+Female,From 20 to 29,Employed,"RM50,000 - RM100,000",Monthly,Drive-thru,More than 3 hours,1km - 3km,Yes,Coffee,Around RM20 - RM40,3,2,4,3,1,3,3,No,2.7142857142857144
+Male,From 20 to 29,Employed,"Less than RM25,000",Never,Unknown,Below 30 minutes,more than 3km,No,Other/None,Zero,1,1,1,3,3,3,3,No,2.142857142857143
+Male,From 20 to 29,Self-employed,"RM50,000 - RM100,000",Rarely,Dine in,Between 1 hour to 2 hours,more than 3km,Yes,Cold drinks,Less than RM20,5,5,5,5,5,5,5,Yes,5.0
+Male,From 30 to 39,Self-employed,"RM50,000 - RM100,000",Weekly,Take away,Between 30 minutes to 1 hour,1km - 3km,Yes,Coffee,Less than RM20,4,4,2,4,3,4,5,Yes,3.7142857142857144
+Male,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Dine in,Between 1 hour to 2 hours,more than 3km,No,Coffee,Around RM20 - RM40,4,2,4,3,4,4,4,No,3.5714285714285716
+Male,From 30 to 39,Self-employed,"More than RM150,000",Monthly,Dine in,Between 2 hours to 3 hours,more than 3km,Yes,Other/None,Around RM20 - RM40,4,3,4,4,3,4,4,Yes,3.7142857142857144
+Male,From 20 to 29,Self-employed,"More than RM150,000",Rarely,Drive-thru,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee,More than RM40,4,3,2,3,1,2,2,Yes,2.4285714285714284
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,1km - 3km,Yes,Coffee,Around RM20 - RM40,3,3,3,4,3,3,3,Yes,3.142857142857143
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Take away,Below 30 minutes,within 1km,Yes,Other/None,Around RM20 - RM40,4,4,4,4,4,4,4,Yes,4.0
+Male,From 20 to 29,Self-employed,"RM25,000 - RM50,000",Rarely,Dine in,Below 30 minutes,1km - 3km,Yes,Cold drinks,Zero,5,5,5,5,4,5,5,Yes,4.857142857142857
+Female,From 30 to 39,Employed,"RM50,000 - RM100,000",Weekly,Dine in,Between 1 hour to 2 hours,more than 3km,Yes,Coffee,Around RM20 - RM40,4,4,5,4,4,5,4,Yes,4.285714285714286
+Female,From 30 to 39,Employed,"RM25,000 - RM50,000",Monthly,Take away,Between 30 minutes to 1 hour,within 1km,Yes,Coffee;Pastries,Around RM20 - RM40,4,3,4,5,5,4,5,Yes,4.285714285714286
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Never,Dine in,Below 30 minutes,within 1km,No,Coffee,Zero,3,3,3,3,3,3,3,No,3.0
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,Yes,Coffee,Less than RM20,5,3,5,5,4,4,1,Yes,3.857142857142857
+Male,From 20 to 29,Employed,"RM50,000 - RM100,000",Monthly,Take away,Below 30 minutes,more than 3km,Yes,Coffee,Around RM20 - RM40,3,1,3,3,1,3,2,Yes,2.2857142857142856
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,Yes,Cold drinks,Less than RM20,3,3,5,4,3,3,4,Yes,3.5714285714285716
+Female,From 20 to 29,Self-employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,3,3,1,4,3,4,4,Yes,3.142857142857143
+Female,From 30 to 39,Employed,"Less than RM25,000",Rarely,Never,Below 30 minutes,within 1km,No,Pastries,Around RM20 - RM40,3,3,3,3,3,3,3,Yes,3.0
+Female,From 20 to 29,Employed,"RM25,000 - RM50,000",Rarely,Drive-thru,Below 30 minutes,1km - 3km,Yes,Coffee,Around RM20 - RM40,4,3,4,3,3,4,4,Yes,3.5714285714285716
+Male,From 30 to 39,Employed,"Less than RM25,000",Rarely,Drive-thru,Between 30 minutes to 1 hour,more than 3km,Yes,Coffee,Less than RM20,4,2,3,4,4,4,4,Yes,3.5714285714285716
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Drive-thru,Between 30 minutes to 1 hour,more than 3km,No,Cold drinks,Around RM20 - RM40,3,2,3,3,3,3,3,Yes,2.857142857142857
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,more than 3km,No,Coffee,Less than RM20,3,4,3,3,1,2,3,Yes,2.7142857142857144
+Male,From 20 to 29,Self-employed,"RM50,000 - RM100,000",Daily,Drive-thru,Below 30 minutes,more than 3km,Yes,Coffee,Around RM20 - RM40,4,2,4,4,3,3,3,Yes,3.2857142857142856
+Male,From 30 to 39,Employed,"RM25,000 - RM50,000",Weekly,Dine in,Between 1 hour to 2 hours,more than 3km,No,Coffee;Pastries,More than RM40,4,5,5,4,4,3,3,Yes,4.0
+Male,Below 20,Student,"Less than RM25,000",Rarely,Drive-thru,Between 30 minutes to 1 hour,more than 3km,No,Pastries,Less than RM20,4,4,4,4,4,4,4,No,4.0
+Male,40 and above,Employed,"RM50,000 - RM100,000",Monthly,Drive-thru,Between 30 minutes to 1 hour,more than 3km,No,Cold drinks,Around RM20 - RM40,4,3,5,4,4,4,4,Yes,4.0
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Coffee,Around RM20 - RM40,3,3,3,3,3,3,3,Yes,3.0
+Female,Below 20,Student,"Less than RM25,000",Never,Never,Below 30 minutes,more than 3km,No,Cold drinks;Never,Zero,3,2,2,2,3,3,3,Yes,2.5714285714285716
+Male,From 20 to 29,Student,"Less than RM25,000",Never,Never,Below 30 minutes,within 1km,No,Other/None,Zero,3,3,3,1,3,3,4,No,2.857142857142857
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Below 30 minutes,more than 3km,No,Coffee;Pastries,Less than RM20,3,3,3,3,3,3,2,No,2.857142857142857
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Cold drinks,Zero,4,2,3,5,4,4,2,No,3.4285714285714284
+Female,From 20 to 29,Employed,"Less than RM25,000",Monthly,Take away,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,5,4,4,4,4,4,4,Yes,4.142857142857143
+Male,From 20 to 29,Student,"More than RM150,000",Never,Never,Below 30 minutes,more than 3km,No,Other/None,Zero,1,1,1,1,1,1,1,No,1.0
+Female,Below 20,Student,"Less than RM25,000",Rarely,Take away,Below 30 minutes,more than 3km,No,Cold drinks,Less than RM20,3,4,5,5,5,4,4,Yes,4.285714285714286
+Male,40 and above,Self-employed,"RM25,000 - RM50,000",Rarely,Dine in,Between 30 minutes to 1 hour,more than 3km,No,Cold drinks,Less than RM20,2,2,1,2,2,3,2,No,2.0
+Male,Below 20,Student,"Less than RM25,000",Daily,Take away,Below 30 minutes,more than 3km,No,Cold drinks,Around RM20 - RM40,5,5,5,5,5,5,5,Yes,5.0
+Male,From 30 to 39,Student,"Less than RM25,000",Monthly,Dine in,Between 1 hour to 2 hours,more than 3km,No,Cold drinks,Less than RM20,4,4,5,4,2,3,4,Yes,3.7142857142857144
+Male,40 and above,Self-employed,"RM25,000 - RM50,000",Monthly,Dine in,Between 1 hour to 2 hours,1km - 3km,Yes,Coffee,Around RM20 - RM40,3,3,5,3,2,4,4,Yes,3.4285714285714284
+Male,From 20 to 29,Employed,"Less than RM25,000",Monthly,Dine in,Between 1 hour to 2 hours,1km - 3km,Yes,Coffee;Cold drinks;Juices;Pastries;Sandwiches,More than RM40,5,5,5,5,5,5,5,Yes,5.0
+Male,From 20 to 29,Student,"Less than RM25,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,No,Coffee;Cold drinks,Less than RM20,3,2,4,3,3,3,4,No,3.142857142857143
+Female,From 20 to 29,Employed,"Less than RM25,000",Rarely,Take away,Below 30 minutes,within 1km,No,Coffee,Less than RM20,4,4,4,4,4,4,4,Yes,4.0
+Male,From 20 to 29,Employed,"RM50,000 - RM100,000",Rarely,Dine in,Between 30 minutes to 1 hour,1km - 3km,No,Coffee,Less than RM20,1,1,5,4,3,3,2,No,2.7142857142857144
