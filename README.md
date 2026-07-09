@@ -1,7 +1,7 @@
 # Understanding Customer Satisfaction and Identifying What Drives Loyalty at Starbucks
 
-**Morgan Gunther**
-**Professor Hammer**
+**Morgan Gunther** <br>
+**Professor Hammer** <br>
 **BMIS 326: Introduction to Analytics**
 
 ## Executive Summary
