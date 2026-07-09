@@ -94,7 +94,7 @@ Finally, I constructed a new variable, "Avg_Satisfaction," calculated as the mea
 
 ## Visualizations
 
-### Story 1: Price is the sore spot
+### Story 1: Price Is the Weakest Category
 
 With customer satisfaction with major coffee chains reportedly down nearly 30% over the last five years, the question isn't whether people are less happy, but why they are. Breaking satisfaction into seven specific categories instead of treating it as one vague feeling makes it possible to pinpoint exactly where that dissatisfaction is coming from. The chart below shows the average rating customers gave across all seven categories, sorted from lowest to highest.
 
@@ -102,7 +102,7 @@ With customer satisfaction with major coffee chains reportedly down nearly 30% o
 
 Price stands out as the clear weak point, averaging 2.89 out of 5, nearly a full point below Promotions, the highest-rated category at 3.80. Every other category clusters fairly tightly around the overall average (the dashed line), which suggests this isn't a company struggling across the board. It's a company whose customers specifically feel like they aren't getting enough value for what they pay. That's a much more useful, fixable finding than a vague sense that "satisfaction is down," and it directly supports the idea that price, not product quality or service, is the biggest lever for improving how customers feel about the brand.
 
-### Story 2: Membership predicts loyalty
+### Story 2: Membership Predicts Loyalty
 
 One of the goals of this project was to figure out whether loyalty program participation actually connects to customers sticking around, or whether it's just a good thing to have that doesn't move the needle. To test this, I compared membership card ownership between two groups: customers who said they'll continue buying from the coffee chain, and customers who said they won't.
 
