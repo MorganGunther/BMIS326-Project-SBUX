@@ -78,6 +78,12 @@ Finally, I constructed a new variable, "Avg_Satisfaction," calculated as the mea
 | Rating_LikelyReturn | Rating: likelihood to return | Numeric (1-5 scale) | 1-5 |
 | Avg_Satisfaction | Constructed: mean of 7 rating columns | Numeric | 1-5 |
 | Continue | Will keep buying | Binary | Yes, No |
+| Membership_Num | Numeric recoding of Membership for modeling | Binary (0/1) | 0 = No, 1 = Yes |
+| Continue_Num | Numeric recoding of Continue for modeling; target variable for Model 2 | Binary (0/1) | 0 = No, 1 = Yes |
+| VisitFrequency_Num | Numeric recoding of VisitFrequency for modeling | Numeric (ordinal scale) | 0 (Never) to 4 (Daily) |
+| Age_From 20 to 29 | Dummy variable: respondent is in the 20-29 age group | Binary (0/1) | 0 = No, 1 = Yes |
+| Age_From 30 to 39 | Dummy variable: respondent is in the 30-39 age group | Binary (0/1) | 0 = No, 1 = Yes |
+| Age_40 and above | Dummy variable: respondent is 40 or older | Binary (0/1) | 0 = No, 1 = Yes |
 
 ## Descriptive Statistics
 
@@ -91,6 +97,9 @@ Finally, I constructed a new variable, "Avg_Satisfaction," calculated as the mea
 | Rating_Service | 3.75 | 4.00 | 0.83 | 1 | 5 |
 | Rating_LikelyReturn | 3.52 | 4.00 | 1.03 | 1 | 5 |
 | Avg_Satisfaction | 3.52 | 3.57 | 0.67 | 1 | 5 |
+| Membership_Num | 0.49 | 0.00 | 0.50 | 0 | 1 |
+| Continue_Num | 0.77 | 1.00 | 0.42 | 0 | 1 |
+| VisitFrequency_Num | 1.34 | 1.00 | 0.79 | 0 | 4 |
 
 ## Visualizations
 
@@ -301,6 +310,8 @@ Confusion Matrix:
 [[ 1  5]
  [ 5 26]]
 ```
+
+![Model 2 Confusion Matrix](model2_confusion_matrix.png)
 
 ## Interpretation
 
