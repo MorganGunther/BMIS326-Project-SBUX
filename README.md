@@ -193,7 +193,7 @@ No further manipulation needed. All required numeric/dummy variables already exi
 
 | Variable | Statistic needed | Reason |
 |---|---|---|
-| Membership_Num, Continue_Num, VisitFrequency_Num | Mean, minimum, maximum | Update Deliverable 1's descriptive stats table with new variables, per Deliverable 2 instructions |
+| Membership_Num, Continue_Num, VisitFrequency_Num | Mean, minimum, maximum | Update Deliverable 1's descriptive stats table with new variables. |
 
 **8. Regression requirements (Model 1)**
 
@@ -246,7 +246,7 @@ Not applicable.
 **14. Interpretation questions**
 
 - Which predictors in Model 1 are statistically significant, and what does each significant coefficient mean in plain terms?
-- How much of the variation in satisfaction does Model 1 explain (R-squared), and is that a strong or weak result?
+- How much of the variation in satisfaction does Model 1 explain (R²), and is that a strong or weak result?
 - Does Model 2 show that membership and/or satisfaction meaningfully predict customer loyalty?
 - How accurate is Model 2 at correctly classifying customers, and where does it make mistakes (per the confusion matrix)?
 
@@ -334,12 +334,12 @@ Model 2 correctly classified 73% of customers in the test set. However, the conf
 **Strengths and weaknesses:**
 
 Model 1 (Linear Regression):
-- Strengths: Identifies two statistically significant, actionable predictors (membership, visit frequency); overall model is statistically significant; no multicollinearity concerns
-- Weaknesses: Low R² means most of what drives satisfaction isn't captured; age added complexity without explanatory power
+- Strengths: Identifies two statistically significant, actionable predictors (membership, visit frequency). Overall model is statistically significant. No multicollinearity concerns
+- Weaknesses: Low R² means most of what drives satisfaction isn't captured. Age added complexity without explanatory power
 
 Model 2 (Logistic Regression):
-- Strengths: Reasonably strong accuracy (73%); satisfaction is a clearly significant, strong predictor; higher pseudo R² than Model 1
-- Weaknesses: Poor at catching customers who won't continue buying; membership and visit frequency were only borderline significant
+- Strengths: Reasonably strong accuracy (73%). Satisfaction is a clearly significant, strong predictor. Higher pseudo R² than Model 1
+- Weaknesses: Poor at catching customers who won't continue buying. Membership and visit frequency were only borderline significant
 
 **Final model justification:** While Model 1 offers useful supporting insight, Model 2 is the stronger and more useful model for this project's core narrative, since my original objectives centered on loyalty and retention, not satisfaction in isolation. Model 2 directly answers that question, showing satisfaction is a strong, significant driver of loyalty with reasonably strong accuracy. However, Model 2 has a real weakness which is that it's much better at identifying loyal customers than at catching customers about to leave, which matters most from a business standpoint. Model 1 helps explain part of why, since satisfaction itself is only modestly explained by membership and visit frequency.
 
