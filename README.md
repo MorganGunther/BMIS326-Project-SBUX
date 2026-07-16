@@ -163,7 +163,7 @@ Logistic regression assumes a linear relationship between the predictors and the
 | What each row represents | An individual Starbucks customer survey respondent |
 | Important columns or variables | Avg_Satisfaction, Continue_Num, Membership_Num, VisitFrequency_Num, Age dummy variables |
 | Target variable, if applicable | Avg_Satisfaction (Model 1); Continue_Num (Model 2) |
-| Predictor variables, if applicable | Membership_Num, VisitFrequency_Num, Age_20to29, Age_30to39, Age_40plus (both models); Avg_Satisfaction is also a predictor for Model 2 |
+| Predictor variables, if applicable | Membership_Num, VisitFrequency_Num, Age_From 20 to 29, Age_From 30 to 39, Age_40 and above (both models); Avg_Satisfaction is also a predictor for Model 2 |
 | Columns that should be removed | Original text versions of recoded columns (Age, Membership, Continue, VisitFrequency) — not needed once numeric versions exist |
 
 **3. Required Python libraries**
@@ -201,7 +201,7 @@ No further manipulation needed. All required numeric/dummy variables already exi
 |---|---|
 | Type of regression | Multiple linear regression |
 | Dependent variable | Avg_Satisfaction |
-| Independent variables | Membership_Num, VisitFrequency_Num, Age_20to29, Age_30to39, Age_40plus |
+| Independent variables | Membership_Num, VisitFrequency_Num, Age_From 20 to 29, Age_From 30 to 39, Age_40 and above |
 | Reason these variables are being used | Tests whether membership status, how often someone visits, and age group meaningfully predict overall satisfaction. This directly extends Deliverable 1's satisfaction objective. |
 | Expected Output | Coefficients, intercept, p-values, R² |
 | Interpretation Focus | Which predictors are statistically significant, direction of each relationship (does membership increase satisfaction? does visiting more often?), and how much of satisfaction these variables explain overall (R²). Also check for multicollinearity between predictors using VIF, since the three age dummy variables are related to each other by construction. |
