@@ -127,10 +127,6 @@ Gathering and preparing this data came with a few struggles. The dataset require
 
 In terms of implications, this kind of category-by-category breakdown matters beyond just this one company. Coffee chains broadly are dealing with declining satisfaction as customers increasingly consider smaller, more personal coffee shops instead. A business that can pinpoint price, specifically, rather than product quality or service, as its biggest satisfaction gap is in a much better position to make a targeted fix. Similarly, showing a real connection between membership enrollment and loyalty gives a business a concrete lever to pull (growing membership enrollment) rather than guessing at what keeps customers coming back. I hope this analysis, even at this early stage, shows that satisfaction and loyalty aren't unknowable areas. They can be broken into specific, addressable pieces with the right data.
 
-## Reference
-
-Evans, Russell. "Grounds for Concern: Why National Coffee Shop Chains Are Losing Steam." *ZS*, 25 Aug. 2025, [www.zs.com/insights/retail-coffee-trends-and-loyalty-insights](http://www.zs.com/insights/retail-coffee-trends-and-loyalty-insights).
-
 # Deliverable 2
 
 ## Select Modeling Techniques
@@ -356,3 +352,8 @@ This phase of the project extended the satisfaction and loyalty narrative from D
 These findings point toward a concrete two-part strategy. Encouraging membership enrollment and repeat visits may genuinely improve satisfaction, and since satisfaction strongly drives loyalty, investments that improve satisfaction (like addressing the price concerns identified in Deliverable 1) are likely to pay off in actual retention.
 
 This analysis has limitations, however. The dataset is relatively small (122 respondents), limiting generalizability. Model 1's low R² means most of what drives satisfaction remains unexplained, factors like price, quality, and service likely matter more than membership or visit frequency alone. Model 2's biggest limitation is its poor performance identifying customers who won't continue buying, likely due to class imbalance in the data. This means the model, as built, would be a poor tool for specifically flagging at-risk customers, arguably the most valuable use case for a loyalty model in practice.
+
+## Reference
+
+Evans, Russell. "Grounds for Concern: Why National Coffee Shop Chains Are Losing Steam." *ZS*, 25 Aug. 2025, [www.zs.com/insights/retail-coffee-trends-and-loyalty-insights](http://www.zs.com/insights/retail-coffee-trends-and-loyalty-insights).
+
