@@ -256,6 +256,10 @@ I'll let you work until you need my help or have something for me to test.
 Follow-up: Are there any other questions you need answered before I test the code? What did I fail to think of?
 
 ## Results
+
+**Model 1: Linear Regression Results**
+
+```
 MODEL 1: Linear Regression - Predicting Avg_Satisfaction
                         OLS Regression Results
 ==============================================================================
@@ -272,7 +276,11 @@ VisitFrequency_Num     0.1928      0.080      2.413      0.017       0.035     0
 Age_From 20 to 29     -0.0877      0.195     -0.450      0.653      -0.473     0.298
 Age_From 30 to 39     -0.0620      0.243     -0.255      0.799      -0.544     0.420
 Age_40 and above      -0.1405      0.305     -0.461      0.645      -0.744     0.463
+```
 
+**Model 2: Logistic Regression Results**
+
+```
 MODEL 2: Logistic Regression - Predicting Continue_Num
                        Logit Regression Results
 ==============================================================================
@@ -285,11 +293,14 @@ const                 -5.7243      1.723     -3.322      0.001      -9.101    -2
 Membership_Num         1.0540      0.608      1.732      0.083      -0.138     2.246
 Avg_Satisfaction       1.6176      0.509      3.181      0.001       0.621     2.614
 VisitFrequency_Num     0.9942      0.529      1.881      0.060      -0.042     2.030
+
 Training set size: 85 rows | Testing set size: 37 rows
 Model 2 Accuracy on test set: 0.730
+
 Confusion Matrix:
 [[ 1  5]
-[ 5 26]]
+ [ 5 26]]
+```
 
 ## Interpretation
 
