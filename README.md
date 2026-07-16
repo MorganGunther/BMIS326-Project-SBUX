@@ -110,7 +110,7 @@ One of the goals of this project was to figure out whether loyalty program parti
 
 The gap is substantial. Among customers who plan to keep buying, 58.5% hold a membership card, compared to just 17.9% of customers who don't plan to continue, over a 3x difference. This suggests membership enrollment isn't just a side perk but it's meaningfully tied to whether a customer sticks with the brand. For a coffee chain trying to reduce churn (customers leaving to buy from a competitor instead) to smaller, more personal competitors, this points to a concrete strategy that getting more customers enrolled in the membership program could be one of the more direct ways to improve retention, rather than relying only on improving individual experience factors like price or service.
 
-## Conclusion and Discussion
+## Conclusion and Discussion (Deliverable 1)
 
 My goal with this project was to break down customer satisfaction at a coffee chain into specific, measurable categories instead of treating it as one vague feeling, and to see whether that breakdown connects to loyalty indicators like membership enrollment. Based on this initial analysis, that approach is already paying off. Price stands out as a clear, specific weak point (2.89 out of 5, well below every other category), and membership enrollment shows a real connection to whether customers plan to keep buying (58.5% among loyal customers vs. 17.9% among those planning to leave). Again, these aren't vague impressions, they're specific, fixable signals that a business could act on.
 
@@ -121,3 +121,216 @@ In terms of implications, this kind of category-by-category breakdown matters be
 ## Reference
 
 Evans, Russell. "Grounds for Concern: Why National Coffee Shop Chains Are Losing Steam." *ZS*, 25 Aug. 2025, [www.zs.com/insights/retail-coffee-trends-and-loyalty-insights](http://www.zs.com/insights/retail-coffee-trends-and-loyalty-insights).
+
+# Deliverable 2
+
+## Select Modeling Techniques
+
+**Model 1: Multiple Linear Regression**
+
+I'm using linear regression to explain how customer satisfaction changes based on membership status, visit frequency, and age group, to determine which of these factors actually relate to how satisfied a customer feels. This connects back to my original goal of understanding what drives satisfaction, extending Deliverable 1's finding that satisfaction breaks down unevenly across categories. Linear regression is the right fit here because my target variable, Avg_Satisfaction, is a continuous number rather than a category, and I want to understand the size and direction of each predictor's relationship, not just classify customers into groups.
+
+Linear regression assumes a linear relationship between predictors and the outcome, independence of observations, normally distributed residuals, and no severe multicollinearity between predictors. I assessed the multicollinearity assumption directly using Variance Inflation Factors (VIF), since my three age dummy variables are related to each other by construction. All VIF values came back well under the common concern threshold of 5, so this assumption held up.
+
+**Model 2: Logistic Regression**
+
+I'm using logistic regression to estimate whether a customer will continue buying from Starbucks based on their membership status, satisfaction level, and visit frequency, to determine which of these factors are strongly predictive of customer loyalty. This connects directly to my original loyalty objective from Deliverable 1, where I found a gap in membership rates between loyal and non-loyal customers, and this model tests that relationship formally. Logistic regression is appropriate here because my target variable, Continue_Num, is binary (will continue vs. won't continue), not a continuous number, so linear regression wouldn't be the right tool.
+
+Logistic regression assumes a linear relationship between the predictors and the log-odds of the outcome, independence of observations, and no severe multicollinearity. Given the same three predictors overlap conceptually with Model 1's cleaner set (no age dummies here), and Model 1 already confirmed low multicollinearity among the shared variables (Membership_Num, VisitFrequency_Num), I did not re-run a separate VIF check for this model.
+
+## Build the Models: PRD
+
+**1. Assignment overview**
+
+| Item | Student response |
+|---|---|
+| Assignment name | Deliverable 2 Building Models |
+| Main purpose of the assignment | Build two data models that extend the satisfaction/loyalty narrative from Deliverable 1: one predicting overall satisfaction, one predicting customer loyalty |
+| Business, scientific, or practical question being answered | What factors predict how satisfied a Starbucks customer is, and what factors predict whether that customer will continue buying from Starbucks? |
+| Expected final submission items | Python script, this PRD, and interpretation responses |
+
+**2. Dataset information**
+
+| Item | Student response |
+|---|---|
+| Dataset file name | sbux_modeling.csv |
+| File type | CSV |
+| What each row represents | An individual Starbucks customer survey respondent |
+| Important columns or variables | Avg_Satisfaction, Continue_Num, Membership_Num, VisitFrequency_Num, Age dummy variables |
+| Target variable, if applicable | Avg_Satisfaction (Model 1); Continue_Num (Model 2) |
+| Predictor variables, if applicable | Membership_Num, VisitFrequency_Num, Age_20to29, Age_30to39, Age_40plus (both models); Avg_Satisfaction is also a predictor for Model 2 |
+| Columns that should be removed | Original text versions of recoded columns (Age, Membership, Continue, VisitFrequency) — not needed once numeric versions exist |
+
+**3. Required Python libraries**
+
+| Library | Purpose |
+|---|---|
+| pandas | Data manipulation |
+| statsmodels | Regression and logistic regression with full statistical output (p-values, R²) |
+| matplotlib | Any supporting charts |
+| sklearn | Train-test split, accuracy score, and confusion matrix for Model 2 |
+
+**4. Data ingestion requirements**
+
+Load sbux_modeling.csv using pandas.read_csv(). Script should print shape and confirm all needed numeric columns are present before modeling.
+
+**5. Data cleaning requirements**
+
+| Cleaning step | Reason |
+|---|---|
+| None | Data was fully cleaned and prepped in Deliverable 1 and the modeling-prep step |
+
+**6. Data manipulation, filtering, and querying requirements**
+
+No further manipulation needed. All required numeric/dummy variables already exist from the modeling-prep script. Script should just select the relevant columns for each model.
+
+**7. Descriptive statistics requirements**
+
+| Variable | Statistic needed | Reason |
+|---|---|---|
+| Membership_Num, Continue_Num, VisitFrequency_Num | Mean, minimum, maximum | Update Deliverable 1's descriptive stats table with new variables, per Deliverable 2 instructions |
+
+**8. Regression requirements (Model 1)**
+
+| Item | Student Response |
+|---|---|
+| Type of regression | Multiple linear regression |
+| Dependent variable | Avg_Satisfaction |
+| Independent variables | Membership_Num, VisitFrequency_Num, Age_20to29, Age_30to39, Age_40plus |
+| Reason these variables are being used | Tests whether membership status, how often someone visits, and age group meaningfully predict overall satisfaction. This directly extends Deliverable 1's satisfaction objective. |
+| Expected Output | Coefficients, intercept, p-values, R² |
+| Interpretation Focus | Which predictors are statistically significant, direction of each relationship (does membership increase satisfaction? does visiting more often?), and how much of satisfaction these variables explain overall (R²). Also check for multicollinearity between predictors using VIF, since the three age dummy variables are related to each other by construction. |
+
+**9. Classification requirements (Model 2)**
+
+| Item | Student Response |
+|---|---|
+| Classification method | Logistic regression |
+| Target variable | Continue_Num (will the customer keep buying: 1 = Yes, 0 = No) |
+| Predictor variables | Membership_Num, Avg_Satisfaction, VisitFrequency_Num |
+| Training/testing split, if required | 70/30 train-test split, with a fixed random_state (42) for reproducibility |
+| Evaluation metrics | Accuracy, confusion matrix |
+| Interpretation focus | Whether membership and satisfaction meaningfully predict loyalty, and how well the model correctly classifies customers as "will continue" vs. "won't continue" |
+
+**10. Clustering requirements**
+
+Not applicable.
+
+**11. Visualization requirements**
+
+| Visualization | Variables | Purpose |
+|---|---|---|
+| Confusion matrix heatmap | Actual vs. predicted Continue_Num | Show how well Model 2 classifies loyal vs. non-loyal customers |
+
+**12. Output requirements**
+
+- Script should print regression coefficients, intercept, p-values, and R² for Model 1
+- Script should print accuracy and confusion matrix for Model 2
+- Script should display the confusion matrix as a chart
+- Script should print a summary comparing basic fit stats for both models (R² for Model 1, accuracy for Model 2)
+
+**13. Testing plan**
+
+| Test | Expected result |
+|---|---|
+| Confirm the file loads correctly | Script displays shape and correct column names |
+| Check Model 1 output | Coefficients and R² print without errors |
+| Check Model 2 output | Accuracy and confusion matrix print without errors |
+| Check train/test split | Split proportions roughly match 70/30 |
+
+**14. Interpretation questions**
+
+- Which predictors in Model 1 are statistically significant, and what does each significant coefficient mean in plain terms?
+- How much of the variation in satisfaction does Model 1 explain (R-squared), and is that a strong or weak result?
+- Does Model 2 show that membership and/or satisfaction meaningfully predict customer loyalty?
+- How accurate is Model 2 at correctly classifying customers, and where does it make mistakes (per the confusion matrix)?
+
+**15. AI prompt based on the PRD**
+
+I am completing a BMIS 326 Python analytics assignment. Use the PRD I attached to create a Python script. The script should follow the requirements, include comments, and produce outputs that help me answer the interpretation questions. Do not invent column names. If a required column is missing, include code that prints the available column names. Please read the PRD carefully, and then ask me any clarifying questions you need before you start coding. Important: Do not start writing code until we are both clear on all requirements and have answered all questions. Please:
+1. Explain what you're doing at each major step
+2. Show me the files you're creating
+3. Let me know if you need any input from me
+I'll let you work until you need my help or have something for me to test.
+
+Follow-up: Are there any other questions you need answered before I test the code? What did I fail to think of?
+
+## Results
+MODEL 1: Linear Regression - Predicting Avg_Satisfaction
+                        OLS Regression Results
+==============================================================================
+Dep. Variable:       Avg_Satisfaction   R-squared:                       0.131
+Model:                            OLS   Adj. R-squared:                  0.094
+Method:                 Least Squares   F-statistic:                     3.499
+Prob (F-statistic):            0.00555
+No. Observations:                 122
+                     coef    std err          t      P>|t|      [0.025    0.975]
+
+const                  3.1941      0.198     16.171      0.000       2.803     3.585
+Membership_Num         0.2920      0.127      2.304      0.023       0.041     0.543
+VisitFrequency_Num     0.1928      0.080      2.413      0.017       0.035     0.351
+Age_From 20 to 29     -0.0877      0.195     -0.450      0.653      -0.473     0.298
+Age_From 30 to 39     -0.0620      0.243     -0.255      0.799      -0.544     0.420
+Age_40 and above      -0.1405      0.305     -0.461      0.645      -0.744     0.463
+
+MODEL 2: Logistic Regression - Predicting Continue_Num
+                       Logit Regression Results
+==============================================================================
+Dep. Variable:           Continue_Num   No. Observations:                  122
+Model:                          Logit   Pseudo R-squ.:                  0.2821
+Method:                           MLE   LLR p-value:                 4.432e-08
+                     coef    std err          z      P>|z|      [0.025    0.975]
+
+const                 -5.7243      1.723     -3.322      0.001      -9.101    -2.347
+Membership_Num         1.0540      0.608      1.732      0.083      -0.138     2.246
+Avg_Satisfaction       1.6176      0.509      3.181      0.001       0.621     2.614
+VisitFrequency_Num     0.9942      0.529      1.881      0.060      -0.042     2.030
+Training set size: 85 rows | Testing set size: 37 rows
+Model 2 Accuracy on test set: 0.730
+Confusion Matrix:
+[[ 1  5]
+[ 5 26]]
+
+## Interpretation
+
+**1. Which predictors in Model 1 are statistically significant, and what does each mean?**
+
+Membership_Num and VisitFrequency_Num were both statistically significant predictors of satisfaction (p = 0.023 and 0.017 respectively), while the three age group variables were not (all p-values above 0.05). Both significant coefficients were positive, meaning members and more frequent visitors reported higher satisfaction on average, holding the other variables constant. Age did not show a meaningful relationship with satisfaction in this dataset.
+
+**2. How much variation does Model 1 explain, and is that strong or weak?**
+
+Model 1 explains about 13% of the variation in satisfaction (R² = 0.131), which is a modest, relatively weak result. The overall model is still statistically significant (F-statistic p = 0.00555), meaning the relationships found are real and not due to chance, but the majority of what drives satisfaction is clearly explained by factors outside this model, likely including price, quality, and service, the categories identified as influential in Deliverable 1.
+
+**3. Does Model 2 show that membership and/or satisfaction meaningfully predict loyalty?**
+
+Avg_Satisfaction was clearly statistically significant (p = 0.001) and strongly positive, meaning higher satisfaction is closely tied to a customer's likelihood of continuing to buy from Starbucks. Membership_Num (p = 0.083) and VisitFrequency_Num (p = 0.060) were both close to the standard 0.05 threshold but did not clear it, suggesting a possible but weaker relationship that this sample size may not be large enough to confirm with full statistical confidence.
+
+**4. How accurate is Model 2, and where does it make mistakes?**
+
+Model 2 correctly classified 73% of customers in the test set. However, the confusion matrix reveals an important limitation which is that the model correctly identified 26 of 31 customers who said they'd continue buying, but only 1 of 6 customers who said they wouldn't. This suggests the model is much better at recognizing loyal customers than at catching customers who are at risk of leaving, likely because the dataset itself is imbalanced (94 "will continue" vs. 28 "won't continue" respondents overall).
+
+## Assess the Models
+
+**Chosen assessment:** For Model 1, R² is the appropriate metric, since it directly measures what percentage of variation in a continuous outcome the model explains. For Model 2, accuracy and the confusion matrix are appropriate instead, since the outcome is categorical, not continuous.
+
+**Strengths and weaknesses:**
+
+Model 1 (Linear Regression):
+- Strengths: Identifies two statistically significant, actionable predictors (membership, visit frequency); overall model is statistically significant; no multicollinearity concerns
+- Weaknesses: Low R² means most of what drives satisfaction isn't captured; age added complexity without explanatory power
+
+Model 2 (Logistic Regression):
+- Strengths: Reasonably strong accuracy (73%); satisfaction is a clearly significant, strong predictor; higher pseudo R² than Model 1
+- Weaknesses: Poor at catching customers who won't continue buying; membership and visit frequency were only borderline significant
+
+**Final model justification:** While Model 1 offers useful supporting insight, Model 2 is the stronger and more useful model for this project's core narrative, since my original objectives centered on loyalty and retention, not satisfaction in isolation. Model 2 directly answers that question, showing satisfaction is a strong, significant driver of loyalty with reasonably strong accuracy. However, Model 2 has a real weakness which is that it's much better at identifying loyal customers than at catching customers about to leave, which matters most from a business standpoint. Model 1 helps explain part of why, since satisfaction itself is only modestly explained by membership and visit frequency.
+
+**Final selection: Model 2**, with Model 1 serving as supporting analysis.
+
+## Conclusion and Discussion (Deliverable 2)
+
+This phase of the project extended the satisfaction and loyalty narrative from Deliverable 1 into two formal models. The first, a linear regression, found that membership status and visit frequency are both statistically significant predictors of overall satisfaction, though these factors only explain about 13% of the variation in satisfaction overall. The second, a logistic regression, found that satisfaction itself is a strong, statistically significant predictor of customer loyalty, correctly classifying 73% of customers in a held-out test set.
+
+These findings point toward a concrete two-part strategy. Encouraging membership enrollment and repeat visits may genuinely improve satisfaction, and since satisfaction strongly drives loyalty, investments that improve satisfaction (like addressing the price concerns identified in Deliverable 1) are likely to pay off in actual retention.
+
+This analysis has limitations, however. The dataset is relatively small (122 respondents), limiting generalizability. Model 1's low R² means most of what drives satisfaction remains unexplained, factors like price, quality, and service likely matter more than membership or visit frequency alone. Model 2's biggest limitation is its poor performance identifying customers who won't continue buying, likely due to class imbalance in the data. This means the model, as built, would be a poor tool for specifically flagging at-risk customers, arguably the most valuable use case for a loyalty model in practice.
