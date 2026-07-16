@@ -150,7 +150,7 @@ Logistic regression assumes a linear relationship between the predictors and the
 | Item | Student response |
 |---|---|
 | Assignment name | Deliverable 2 Building Models |
-| Main purpose of the assignment | Build two data models that extend the satisfaction/loyalty narrative from Deliverable 1: one predicting overall satisfaction, one predicting customer loyalty |
+| Main purpose of the assignment | Build two data models that extend the satisfaction/loyalty narrative from Deliverable 1. One predicting overall satisfaction, one predicting customer loyalty |
 | Business, scientific, or practical question being answered | What factors predict how satisfied a Starbucks customer is, and what factors predict whether that customer will continue buying from Starbucks? |
 | Expected final submission items | Python script, this PRD, and interpretation responses |
 
@@ -164,7 +164,7 @@ Logistic regression assumes a linear relationship between the predictors and the
 | Important columns or variables | Avg_Satisfaction, Continue_Num, Membership_Num, VisitFrequency_Num, Age dummy variables |
 | Target variable, if applicable | Avg_Satisfaction (Model 1); Continue_Num (Model 2) |
 | Predictor variables, if applicable | Membership_Num, VisitFrequency_Num, Age_From 20 to 29, Age_From 30 to 39, Age_40 and above (both models); Avg_Satisfaction is also a predictor for Model 2 |
-| Columns that should be removed | Original text versions of recoded columns (Age, Membership, Continue, VisitFrequency) — not needed once numeric versions exist |
+| Columns that should be removed | Original text versions of recoded columns (Age, Membership, Continue, VisitFrequency). Not needed once numeric versions exist |
 
 **3. Required Python libraries**
 
